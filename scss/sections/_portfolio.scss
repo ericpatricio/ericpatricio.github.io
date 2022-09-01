@@ -1,0 +1,11 @@
+@use "../custom" as *;
+@use "../base/mixin" as *;
+
+.portfolio {
+  @include phone {
+    padding: 0.5rem;
+  }
+  @include tablet-down {
+    padding: 2rem;
+  }
+}

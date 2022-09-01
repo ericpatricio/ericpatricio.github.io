@@ -1,0 +1,23 @@
+@use "../custom" as *;
+@use "../base/mixin" as *;
+.about {
+  color: $white;
+  .image {
+    display: block;
+    max-width: 100%;
+    width: 450px;
+    height: 350px;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: top center;
+  }
+  @include tablet-down {
+    .row {
+      display: flex;
+      flex-direction: column-reverse;
+      .about-image {
+        margin-top: 4rem;
+      }
+    }
+  }
+}

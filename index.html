@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="My personal portfolio website built with custom Bootstrap and SCSS "
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Bootstrap, scss, sass, JavaScript, web developer frontend developer"
+    />
+    <meta name="author" content="Eric Patricio" />
+    <title>Eric Patricio | Self-Taught FrontEnd Developer</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <!-- Google fonts Dancing Script | Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Mono:wght@200;300;400;500;600;700&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="dist/images/favicon.png"
+    />
+
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="home" class="header">
+      <!-- Navbar//////////////////////////////////////////// -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid px-4 mx-md-4">
+          <a class="navbar-brand" href="#home">EP</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link underline" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link underline" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  class="nav-link btn btn-outline-primary button"
+                  href="dist/images/EricWPatricio_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar///////////////////////////////////// -->
+      <!-- Hero section/////////////////////////////////// -->
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+              <h1 class="hero-text_title">Hi, I'm <span>Eric</span>,</h1>
+              <p class="hero-text_desc">Self-Taught FrontEnd Developer</p>
+              <a
+                href="#portfolio"
+                class="btn btn-outline-primary text-white button mt-4"
+                >See My Work</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero section/////////////////////////////////// -->
+      <!-- Social media position fixed///////////////////////////////// -->
+      <div class="social-media">
+        <!-- Facebook -->
+        <a
+          class="btn btn-outline-primary text-white m-1"
+          href="https://www.facebook.com/ericwilmy"
+          role="button"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+
+        <!-- Twitter -->
+        <a
+          class="btn btn-outline-primary text-white m-1"
+          href="https://twitter.com/EricPatricio"
+          role="button"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-twitter"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a
+          class="btn btn-outline-primary text-white m-1"
+          href="https://www.instagram.com/ericwilmy/"
+          role="button"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-instagram"></i
+        ></a>
+
+        <!-- Linkedin -->
+        <a
+          class="btn btn-outline-primary text-white m-1"
+          href="https://www.linkedin.com/in/ericpatricio/"
+          role="button"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+
+        <!-- Github -->
+        <a
+          class="btn btn-outline-primary text-white m-1"
+          href="https://github.com/ericpatricio"
+          role="button"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <!-- End Social media fixed///////////////////////////////// -->
+    </header>
+    <main>
+      <!-- About section/////////////////////////////////////////// -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="title-section">
+            <h2 class="text-start">About Me</h2>
+            <p class="text-light text-opacity-75">Who Am I?</p>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-3 about-image">
+              <img
+                src="dist/images/profile-picture.jpg"
+                alt="profile picture"
+                class="image"
+              />
+            </div>
+            <div class="col-md-9">
+              <p>
+                My name is Eric Patricio. My Current experience is in Warehouse
+                operation and management. COVID-19 recession made me look for
+                ways to study to become a Jr. FrontEnd Developer. Based in
+                Kissimmee, FL. Husband and father of three precious kids.
+              </p>
+              <p>
+                Passionate about tech, coding things from scratch, and enjoy
+                bringing ideas to life for the web, with a fundamental
+                understanding of mobile-first design concepts, and problem
+                solver. I am constantly learning new things and focusing on my
+                long-term goal which is to be a full-stack developer.
+              </p>
+
+              <h5 class="fw-bold text-light mt-4">Technical Skills:</h5>
+              <div class="d-flex align-content-stretch flex-wrap">
+                <div class="p-2">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="HTML"
+                  >
+                    <i class="fab fa-html5 fa-3x"></i>
+                  </button>
+                </div>
+                <div class="p-2">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="CSS"
+                  >
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                  </button>
+                </div>
+                <div class="p-2">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="SASS"
+                  >
+                    <i class="fab fa-sass fa-3x"></i>
+                  </button>
+                </div>
+                <div class="p-2">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="Bootstrap"
+                  >
+                    <i class="fab fa-bootstrap fa-3x"></i>
+                  </button>
+                </div>
+                <div class="p-2">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="JavaScript"
+                  >
+                    <i class="fab fa-js-square fa-3x"></i>
+                  </button>
+                </div>
+                <div class="p-2">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="Git"
+                  >
+                    <i class="fab fa-git fa-3x"></i>
+                  </button>
+                </div>
+                <div class="p-2">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    data-bs-title="npm"
+                  >
+                    <i class="fa-brands fa-npm fa-3x"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End about section//////////////////////////////////////// -->
+      <!-- Portfolio section -->
+      <section id="portfolio" class="portfolio text-white">
+        <div class="container mt-3">
+          <div class="title-section">
+            <h2 class="text-start">My Work</h2>
+            <p class="text-start text-light text-opacity-75">
+              Featured Projects
+            </p>
+          </div>
+          <!-- row start -->
+          <div class="row row-cols-1 row-cols-md-2 g-4 py-4">
+            <div class="col">
+              <div class="card text-end">
+                <img
+                  src="dist/images/coming-soon.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Coming Soon</h5>
+                  <p class="card-text mb-4">Project comming soon</p>
+
+                  <a
+                    class="btn btn-outline-primary px-4 button"
+                    href="#!"
+                    role="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Github</a
+                  >
+                  <a
+                    class="btn btn-outline-primary px-4 button"
+                    href="#!"
+                    role="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-end">
+                <img
+                  src="dist/images/coming-soon.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Coming Soon</h5>
+                  <p class="card-text mb-4">Project comming soon</p>
+                  <a
+                    class="btn btn-outline-primary px-4 button"
+                    href="#!"
+                    role="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Github</a
+                  >
+                  <a
+                    class="btn btn-outline-primary px-4 button"
+                    href="#!"
+                    role="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-end">
+                <img
+                  src="dist/images/coming-soon.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Coming Soon</h5>
+                  <p class="card-text mb-4">Project comming soon</p>
+                  <a
+                    class="btn btn-outline-primary px-4 button"
+                    href="#!"
+                    role="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Github</a
+                  >
+                  <a
+                    class="btn btn-outline-primary px-4 button"
+                    href="#!"
+                    role="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-end">
+                <img
+                  src="dist/images/coming-soon.jpg"
+                  class="card-img-top"
+                  alt="intro-landing-page_screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Coming Soon</h5>
+                  <p class="card-text mb-4">Project comming soon</p>
+                  <a
+                    class="btn btn-outline-primary px-4 button"
+                    href="#!"
+                    role="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Github</a
+                  >
+                  <a
+                    class="btn btn-outline-primary px-4 button"
+                    href="#!"
+                    role="button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- ///////////////////////////////////////// -->
+        <!-- Other projects//////////////////////// -->
+        <article class="other-projects mt-3 pt-3">
+          <div class="container mt-3">
+            <h3 class="text-center title-section mb-3 pb-3">
+              Other Practice Projects
+            </h3>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <!-- First column -->
+              <div class="col">
+                <div class="card my-3">
+                  <div class="card-header mt-3 text-end">
+                    <a
+                      href="https://github.com/ericpatricio/easybank-landing-page"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="mx-2"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      href="https://github.com/ericpatricio/ericpatricio-portfolio-website"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                  </div>
+                  <div class="card-body text-white">
+                    <a
+                      href="https://ericpatricio.github.io/ericpatricio-portfolio-website/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><h5 class="card-title">My First Portfolio Website</h5></a
+                    >
+
+                    <p class="card-text">
+                      My first portfolio website responsive using flexbox, CSS
+                      grid, SASS and practicing with gulp js.
+                    </p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SCSS</li>
+                    <li>JS</li>
+                    <li>Gulp JS</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End First column -->
+              <!-- Second column -->
+              <div class="col">
+                <div class="card my-3">
+                  <div class="card-header mt-3 text-end">
+                    <a
+                      href="https://github.com/ericpatricio/Titas-cuisine"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="mx-2"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      href="https://ericpatricio.github.io/Titas-cuisine/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                  </div>
+                  <div class="card-body text-white">
+                    <a
+                      href="https://github.com/ericpatricio/Titas-cuisine"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><h5 class="card-title">Tita's Cuisine</h5></a
+                    >
+
+                    <p class="card-text">
+                      A Dominican restaurant website inspire by my mother in law
+                      that likes to cook, code with HTML, CSS, and JavaScript.
+                    </p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End second column -->
+              <!-- Third column -->
+              <div class="col">
+                <div class="card my-3">
+                  <div class="card-header mt-3 text-end">
+                    <a
+                      href="https://github.com/ericpatricio/easybank-landing-page"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="mx-2"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      href="https://ericpatricio.github.io/easybank-landing-page/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                  </div>
+                  <div class="card-body text-white">
+                    <a
+                      href="https://github.com/ericpatricio/easybank-landing-page"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><h5 class="card-title">Easybank Landing Page</h5></a
+                    >
+
+                    <p class="card-text">
+                      A
+                      <a
+                        href="https://www.frontendmentor.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >FrontEnd Mentor Challenge</a
+                      >, a responsive easybank landing page using flexbox, CSS
+                      grid, and SASS.
+                    </p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SCSS</li>
+                    <li>JS</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End third column -->
+              <!-- Fourth column -->
+              <div class="col">
+                <div class="card my-3">
+                  <div class="card-header mt-3 text-end">
+                    <a
+                      href="https://github.com/ericpatricio/AJ-Agency-landing-page"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="mx-2"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                      href="https://ericpatricio.github.io/AJ-Agency-landing-page/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                  </div>
+                  <div class="card-body text-white">
+                    <a
+                      href="https://github.com/ericpatricio/AJ-Agency-landing-page"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <h5 class="card-title">AJ Agency</h5></a
+                    >
+                    <p class="card-text">
+                      A fake Agency website with multiple pages code with HTML,
+                      CSS, and JavaScript.
+                    </p>
+                  </div>
+                  <ul class="tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End fourth column -->
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- End portfolio section//////////////////////////////////// -->
+
+      <!-- Contact section//////////////////////////////////////////// -->
+      <section id="contact" class="contact">
+        <div class="container mt-3">
+          <div class="title-section">
+            <h2 class="text-start pb-2">Contact Me</h2>
+            <p class="text-light text-opacity-75 pb-2">Get In Touch</p>
+          </div>
+          <div class="row mt-4">
+            <!-- Direct contact -->
+
+            <div class="col-lg-6 direct-contact">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <i class="fa fa-map-marker fa-2x"></i>
+                  <span class="contact-info">Kissimmee, Florida</span>
+                </li>
+
+                <li class="list-group-item">
+                  <i class="fa fa-phone fa-2x"></i>
+                  <span class="contact-info">
+                    <a
+                      href="tel:786-352-0061"
+                      class="text-white"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >(786) 352-0061</a
+                    ></span
+                  >
+                </li>
+
+                <li class="list-group-item">
+                  <i class="fa fa-envelope fa-2x"></i>
+                  <span class="contact-info"
+                    ><a
+                      href="mailto:ericwpatricio@gmail.com"
+                      class="text-white"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >ericwpatricio@gmail.com</a
+                    ></span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <!-- Contact form -->
+
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/xaykwnjz"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control form-control-lg"
+                  placeholder="NAME"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control mt-3"
+                  placeholder="EMAIL"
+                  required
+                />
+
+                <div class="mb-3 mt-3">
+                  <textarea
+                    class="form-control"
+                    rows="5"
+                    id="comment"
+                    name="message"
+                    placeholder="MESSAGE"
+                    required
+                  ></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                  <button
+                    type="submit"
+                    class="btn btn-outline-primary text-white mt-3 button"
+                  >
+                    Send <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End contact section///////////////////////////////////////////// -->
+      <!-- footer section///////////////////////////////////////////////////-->
+      <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <div class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-outline-primary text-white m-1"
+              href="https://www.facebook.com/ericwilmy"
+              role="button"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+              class="btn btn-outline-primary text-white m-1"
+              href="https://twitter.com/EricPatricio"
+              role="button"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+              class="btn btn-outline-primary text-white m-1"
+              href="https://www.instagram.com/ericwilmy/"
+              role="button"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+              class="btn btn-outline-primary text-white m-1"
+              href="https://www.linkedin.com/in/ericpatricio/"
+              role="button"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <!-- Github -->
+            <a
+              class="btn btn-outline-primary text-white m-1"
+              href="https://github.com/ericpatricio"
+              role="button"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="copyright text-center py-2 bg-secondary">
+          <p>
+            &copy; Copyright: <span id="current-year"></span>
+            Eric Patricio
+          </p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- End footer section///////////////////////////////////// -->
+    </main>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>

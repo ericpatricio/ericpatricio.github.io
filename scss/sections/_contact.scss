@@ -1,0 +1,54 @@
+@use "../custom" as *;
+@use "../base/mixin" as *;
+// Contact form
+.contact {
+  position: relative;
+  background: transparent;
+  color: $white;
+  padding: 0 1rem 1rem 1rem;
+
+  .form-control,
+  textarea {
+    background-color: #000;
+    color: $white;
+    letter-spacing: 1px;
+    border: 1px solid rgba($color: $white, $alpha: 0.2);
+
+    &:focus {
+      background-color: $white;
+      color: #000;
+    }
+  }
+}
+
+// ////////////////
+// Direct contact info
+.direct-contact {
+  @include tablet-big-down {
+    margin-bottom: 4rem;
+  }
+  .list-group {
+    list-style-type: none;
+
+    .text-secondary {
+      color: $white;
+    }
+    &-item {
+      color: $white;
+      background-color: transparent;
+      border: none;
+
+      .contact-info {
+        font-size: 1.2rem;
+        letter-spacing: 1.8px;
+        margin-left: 1rem;
+
+        a {
+          @include tablet-big-down {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

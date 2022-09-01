@@ -1,0 +1,21 @@
+@use "../custom" as *;
+@mixin phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tablet-down {
+  @media (max-width: 766px) {
+    @content;
+  }
+}
+@mixin tablet-big-down {
+  @media (max-width: 993px) {
+    @content;
+  }
+}
+@mixin desktop-down {
+  @media (max-width: 1290px) {
+    @content;
+  }
+}
