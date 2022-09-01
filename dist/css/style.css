@@ -10975,14 +10975,9 @@ img {
   transform-origin: bottom left;
 }
 
-@media (max-width: 599px) {
-  .portfolio {
-    padding: 0.5rem;
-  }
-}
 @media (max-width: 766px) {
   .portfolio {
-    padding: 2rem;
+    padding: 0.5rem;
   }
 }
 
