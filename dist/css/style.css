@@ -10739,12 +10739,19 @@ body {
   background-size: cover;
   background-position: center;
   background-color: #212529;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("../images/background.jpg");
-  background-attachment: fixed;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
   background-repeat: no-repeat;
-  position: relative;
-  height: 100vh;
   font-family: "Roboto Mono", monospace;
+}
+
+body::after {
+  content: url("../images/background.jpg");
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
 }
 
 p {
@@ -10810,7 +10817,7 @@ img {
 .card img {
   max-width: 100%;
   width: 100%;
-  height: 400px;
+  height: 350px;
 }
 .card .tech-list {
   display: flex;
