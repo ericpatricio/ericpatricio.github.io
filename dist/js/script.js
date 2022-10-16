@@ -3,6 +3,8 @@
 // Navbar on scroll background color dark | social media icons display none
 const navbar = document.querySelector(".navbar");
 const socialIcons = document.querySelector(".social-media");
+const navToggler = document.querySelector(".navbar-toggler");
+const collapse = document.querySelector(".navbar-collapse");
 window.onscroll = function () {
   let top = window.scrollY;
   if (top >= 100) {
@@ -17,7 +19,14 @@ window.onscroll = function () {
   }
 };
 // /////////////////////////
-
+// Add eventlistener to document object to look for class navbar show
+document.addEventListener("click", function (e) {
+  if (e.target === navToggler) {
+    collapse.classList.add("show");
+  } else {
+    collapse.classList.remove("show");
+  }
+});
 // //////////////////////////////////////
 // Enable tooltips with bootstrap
 const tooltipTriggerList = document.querySelectorAll(

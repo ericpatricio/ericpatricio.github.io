@@ -10732,7 +10732,7 @@ textarea.form-control-lg {
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 64px;
+  scroll-padding-top: 3.8rem;
 }
 
 body {
