@@ -5,10 +5,19 @@
   position: relative;
   height: 100vh;
 
+  span {
+    color: red;
+  }
+
   .navbar {
     &-brand {
       font-family: "Dancing Script", cursive;
       font-size: 2rem;
+      color: $dark;
+    }
+
+    .navbar-nav a {
+      color: $dark;
     }
   }
 
@@ -18,7 +27,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: $white;
+    color: $dark;
 
     a {
       font-size: 1.5rem;
@@ -52,7 +61,13 @@
 }
 // Javascript navbar on scroll
 .navbarDark {
-  background-color: black;
+  background-color: $dark;
+  .navbar-brand {
+    color: $light;
+  }
+  .navbar-nav a.nav-link {
+    color: $white;
+  }
 }
 
 // Links underline on hover

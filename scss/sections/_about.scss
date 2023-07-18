@@ -1,7 +1,8 @@
 @use "../custom" as *;
 @use "../base/mixin" as *;
 .about {
-  color: $white;
+  background-color: $gray-900;
+  color: $light;
   .image {
     display: block;
     max-width: 100%;

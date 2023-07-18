@@ -1,6 +1,6 @@
 @use "../custom" as *;
 .card {
-  background: transparent;
+  background: #393e46;
   border: 1px solid rgba($color: $white, $alpha: 0.3);
   cursor: pointer;
 
@@ -42,7 +42,6 @@
     transform: scale(1.01);
   }
 }
-
 .other-projects {
   .col {
     .card {

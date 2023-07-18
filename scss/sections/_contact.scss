@@ -4,7 +4,7 @@
 .contact {
   position: relative;
   background: transparent;
-  color: $white;
+  color: $dark;
   padding: 0 1rem 1rem 1rem;
 
   .form-control,
@@ -34,9 +34,22 @@
       color: $white;
     }
     &-item {
-      color: $white;
+      color: $dark;
       background-color: transparent;
       border: none;
+      @include tablet-big-down {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // text-align: center;
+      }
+      span.contact-info {
+        @include tablet-big-down {
+          font-size: 1rem;
+          margin-left: 0;
+        }
+      }
 
       .contact-info {
         font-size: 1.2rem;
@@ -44,6 +57,8 @@
         margin-left: 1rem;
 
         a {
+          color: $dark;
+
           @include tablet-big-down {
             font-size: 0.9rem;
           }
