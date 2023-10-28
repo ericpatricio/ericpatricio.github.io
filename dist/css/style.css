@@ -10822,7 +10822,7 @@ img {
 .card img {
   max-width: 100%;
   width: 100%;
-  height: 350px;
+  height: 300px;
 }
 .card .tech-list {
   display: flex;
@@ -10839,7 +10839,7 @@ img {
 
 .other-projects .col .card {
   min-height: 250px;
-  height: 200px;
+  height: 300px;
 }
 .other-projects .col .card:hover {
   border: 1px solid #00adb5;
