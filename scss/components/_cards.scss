@@ -3,6 +3,10 @@
   background: #393e46;
   border: 1px solid rgba($color: $white, $alpha: 0.3);
   cursor: pointer;
+  height: auto;
+  @include phone {
+    background-color: red;
+  }
 
   &-text {
     font-size: 0.9rem;
@@ -46,7 +50,7 @@
   .col {
     .card {
       min-height: 250px;
-      height: auto;
+      height: 200px;
 
       &:hover {
         border: 1px solid $primary;
