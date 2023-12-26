@@ -10782,7 +10782,6 @@ img {
 .portfolio,
 .contact {
   padding: 4rem 0;
-  margin: 4rem 0;
 }
 
 .title-section {
@@ -10937,7 +10936,8 @@ img {
 
 .header {
   position: relative;
-  height: 60vh;
+  height: 100vh;
+  width: 100%;
 }
 .header span {
   color: red;
