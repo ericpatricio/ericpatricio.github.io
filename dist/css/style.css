@@ -10944,11 +10944,12 @@ img {
 }
 .header .navbar-brand {
   font-family: "Dancing Script", cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #222831;
 }
 .header .navbar .navbar-nav a {
   color: #222831;
+  font-size: 1.2rem;
 }
 .header .hero-text {
   text-align: center;
