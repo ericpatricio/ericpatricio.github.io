@@ -1,9 +1,9 @@
 @use "../custom" as *;
 
 .button {
-  box-shadow: inset 0 0 0 0 $primary;
+  box-shadow: inset 0 0 0 0 $secondary;
   transition: ease-in-out 0.4s;
-  color: $dark;
+  color: $primary;
 
   &:hover {
     box-shadow: inset 400px 0 0 0 $primary;

@@ -1,24 +1,26 @@
 @use "../custom" as *;
 @use "../base/mixin" as *;
 .about {
-  background-color: $gray-900;
-  color: $light;
-  .image {
-    display: block;
-    max-width: 100%;
-    width: 450px;
-    height: 350px;
-    margin: 0 auto;
-    object-fit: contain;
-    object-position: top center;
+  &-content {
+    img {
+      display: block;
+      width: 300px;
+      height: auto;
+      margin: 0 auto;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 50%;
+    }
   }
-  @include tablet-down {
-    .row {
-      display: flex;
-      flex-direction: column-reverse;
-      .about-image {
-        margin-top: 4rem;
-      }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    span {
+      margin-top: 0.5rem;
+      font-weight: 300;
     }
   }
 }

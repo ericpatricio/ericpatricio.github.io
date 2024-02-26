@@ -42,63 +42,71 @@
   <body>
     <header id="home" class="header">
       <!-- Navbar//////////////////////////////////////////// -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid px-4 mx-md-4">
-          <a class="navbar-brand" href="#home">EP</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link underline" aria-current="page" href="#home"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link underline" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link underline" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link underline" href="#contact">Contact</a>
-              </li>
+      <nav class="navbar d-flex justify-content-center align-items-center position-fixed w-100">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-logo text-primary fw-bold" href="#home"> Eric Patricio </a>
+          
+          <!--  This is the button to toggle the menu on mobile devices  -->
+          <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
+          <!-- This is the list of menu items   -->
+          <div class="navbar-menu">
+            <ul class="d-flex p-0 m-0">
+              <li><a href="#home">Home</a</li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
-      </nav>
+      </nav>      
       <!-- End Navbar///////////////////////////////////// -->
       <!-- Hero section/////////////////////////////////// -->
       <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-              <h1 class="hero-text_title">Hi, I'm <span>Eric</span>.</h1>
-              <p class="hero-text_desc">Front-End Web Developer</p>
-              <a
-                href="#portfolio"
-                class="btn btn-outline-primary text-dark button mt-4"
-                >See My Work</a
-              >
+          <div class="hero-content row d-flex flex-row-reverse  justify-content-center align-items-center text-center mx-auto">
+            <div class="col-8 col-sm-8 col-lg-6  animation">
+              <img
+                src="/dist/images/hero-coding-img.png"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Hero image"                
+                loading="lazy"                
+              />
+            </div>
+            <div class="col-lg-6 hero-text text-md-start animation">
+              <h1 class="display-4 lh-1 mb-3 text-secondary">
+                Front-End Web Developer
+              </h1>
+              <p class="my-3 py-3">
+                Hi, I'm <span class="text-primary fw-bold">Eric</span>. Self-taught developer who enjoys creating sites or apps that allow users to access and interact with them. 
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-lg-start">
+                <a
+                  href="#portfolio"
+                  type="button"
+                  class="btn btn-primary px-4 me-md-2"
+                >
+                  My Work
+                </a>
+                <a
+                  href="#contact"
+                  type="button"
+                  class="btn btn-outline-primary button px-4"
+                >Contact Me
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- End Hero section/////////////////////////////////// -->
       <!-- Social media position fixed///////////////////////////////// -->
-      <div class="social-media">
+      <div class="social-media animation">
         <!-- Linkedin -->
         <a
           class="btn btn-outline-primary m-1"
@@ -120,35 +128,31 @@
       </div>
       <!-- End Social media fixed///////////////////////////////// -->
     </header>
+    
     <main>
       <!-- About section/////////////////////////////////////////// -->
-      <section id="about" class="about">
+      <section id="about" class="about text-secondary h-100">
         <div class="container">
-          <div class="title-section">
-            <h2 class="text-start mb-3">About Me</h2>
+          <div class="title-section pb-4 animation">
+            <h2 class="text-start">About Me </h2>            
           </div>
-          <div class="row mt-4">
-            <div class="col-md-3 about-image">
-              <img
+          <div class="about-content row mt-4 animation">
+            <div class="col-md-4 mb-4">              
+                 <img
                 src="dist/images/profile-picture.jpg"
-                alt="profile picture"
-                class="image"
-              />
+                alt="profile picture"                
+              />    
+             
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8 animation">
               <p>
                 Originally from Dominican Republic and currently settled in
-                Kissimmee FL, my name is Eric Patricio and I am an aspiring
-                Front-End Web Developer.
+                Kissimmee FL, my name is Eric Patricio and I am Front-End Web Developer.
               </p>
-              <p>
-                I have over 5 years of experience in Warehouse Operations and
-                Management. However, the recent COVID-19 pandemic has challenged
-                me to broaden my knowledge and skillset which led me to study
-                and acquire the requisite skills to become a Front-End
-                Developer.
+              <p class="mt-3">
+                I have over 5 years of experience in Warehouse Operations and Management. However, my love and fascination for technology since I was a teen led me to study and acquire the requisite skills to become a Front-End Developer.
               </p>
-              <p>
+              <p class="mt-3">
                 I would describe myself as being passionate about tech and
                 coding from scratch. Additionally, I enjoy bringing ideas to
                 life for the web, with a fundamental understanding of
@@ -156,382 +160,419 @@
                 constantly on a path of learning and focusing on my long-term
                 objective to become a Full Stack Developer.
               </p>
-              <p>
-                I enjoy every minute with my family, playing with my kiddos, I
-                like to invent different dishes that I sometimes see on the web
-                and cook it.
+              <p class="mt-3">
+                When I’m not at the computer, I’m usually 
+                with my family, playing with my kiddos, and
+                cooking different dishes that I sometimes see on the web and cook them for my family to try.
               </p>
-              <h5 class="fw-bold text-light mt-4">Technical Skills:</h5>
+              
+            </div>
+          </div>
+          <div class="tech-stack row animation">
+             <h5 class="text-secondary fw-normal pt-4 mt-4">Technical Skills:</h5>
               <div class="d-flex align-content-stretch flex-wrap">
-                <div class="p-2">
+                <div class="skill p-2">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-primary"
                     data-bs-toggle="tooltip"
-                    data-bs-placement="bottom"
-                    data-bs-title="HTML"
+                    data-bs-placement="bottom"                    
                   >
                     <i class="fab fa-html5 fa-3x"></i>
                   </button>
+                  <span>HTML</span>
                 </div>
-                <div class="p-2">
+                <div class="skill p-2">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-primary"
                     data-bs-toggle="tooltip"
-                    data-bs-placement="bottom"
-                    data-bs-title="CSS"
+                    data-bs-placement="bottom"                    
                   >
                     <i class="fab fa-css3-alt fa-3x"></i>
                   </button>
+                  <span>CSS</span>
                 </div>
-                <div class="p-2">
+                <div class="skill p-2">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-primary"
                     data-bs-toggle="tooltip"
-                    data-bs-placement="bottom"
-                    data-bs-title="SASS"
+                    data-bs-placement="bottom"                    
                   >
                     <i class="fab fa-sass fa-3x"></i>
                   </button>
+                  <span>SASS</span>
                 </div>
-                <div class="p-2">
+                <div class="skill p-2">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-primary"
                     data-bs-toggle="tooltip"
-                    data-bs-placement="bottom"
-                    data-bs-title="Bootstrap"
+                    data-bs-placement="bottom"                   
                   >
                     <i class="fab fa-bootstrap fa-3x"></i>
                   </button>
+                  <span>Bootstrap</span>
                 </div>
-                <div class="p-2">
+                <div class="skill p-2">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-primary"
                     data-bs-toggle="tooltip"
-                    data-bs-placement="bottom"
-                    data-bs-title="JavaScript"
+                    data-bs-placement="bottom"                  
                   >
                     <i class="fab fa-js-square fa-3x"></i>
                   </button>
+                  <span>JavaScript</span>
                 </div>
-                <div class="p-2">
+                <div class="skill p-2">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-primary"
                     data-bs-toggle="tooltip"
-                    data-bs-placement="bottom"
-                    data-bs-title="Git"
+                    data-bs-placement="bottom"                    
                   >
                     <i class="fab fa-git fa-3x"></i>
                   </button>
+                  <span>Git</span>
                 </div>
-                <div class="p-2">
+                <div class="skill p-2">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-primary"
                     data-bs-toggle="tooltip"
-                    data-bs-placement="bottom"
-                    data-bs-title="npm"
+                    data-bs-placement="bottom"                    
                   >
                     <i class="fa-brands fa-npm fa-3x"></i>
                   </button>
+                  <span>npm</span>
+                </div>
+                <div class="skill p-2">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"                    
+                  >
+                    <i class="fa-brands fa-node fa-3x"></i>
+                  </button>
+                  <span>Node JS</span>
+                </div>
+                <div class="skill p-2">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"                    
+                  >
+                    <svg id='Express Js' width='48' height='48' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='48' height='48' stroke='none' fill='#000000' opacity='0'/>
+                      <g transform="matrix(0.4 0 0 0.4 12 12)" >
+                      <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-24.98, -25.5)" d="M 49.729 11 L 48.879 11 C 47.827999999999996 11 46.838 11.49 46.199 12.324 L 37.498999999999995 23.701 L 28.798999999999996 12.324 C 28.162 11.49 27.171 11 26.121 11 L 25.270999999999997 11 L 36.242 25.346 L 25.036 40 L 25.886000000000003 40 C 26.937 40 27.927000000000003 39.51 28.565 38.676 L 37.5 26.992 L 46.435 38.676 C 47.073 39.51 48.063 40 49.114 40 L 49.964 40 L 38.758 25.346 L 49.729 11 z M 21.289 34.242 C 18.735000000000003 38.123 13.707 40.111999999999995 8.900000000000002 38.358 C 4.671 36.815 2 32.611 2 28.109 L 2 27 L 14 27 L 14 27 L 25 27 L 25 22.866 C 25 16.361 20.182000000000002 10.666 13.705 10.057 C 6.273 9.358 0 15.21 0 22.5 L 0 28.073 C 0 33.444 3.215 38.437 8.269 40.256 C 14.872 42.632 21.817 39.086 24.165 33 C 24.165 33 24.165 33 24.165 33 L 23.526999999999997 33 C 22.616 33 21.789 33.481 21.289 34.242 z M 2 22.5 C 2 16.71 6.71 12 12.5 12 C 18.29 12 23 16.71 23 22.5 L 23 25 L 2 25 L 2 22.5 z" stroke-linecap="round" />
+                      </g>
+                    </svg>
+                  </button>
+                  <span>Express JS</span>
                 </div>
               </div>
-            </div>
           </div>
+         
         </div>
       </section>
       <!-- End about section//////////////////////////////////////// -->
       <!-- Portfolio section -->
-      <section id="portfolio" class="portfolio text-white">
+      <section id="portfolio" class="portfolio text-white ">
         <div class="container mt-3">
-          <div class="title-section">
-            <h2 class="text-start mb-3">Featured Projects</h2>
+          <div class="title-section pb-4 animation">
+            <h2 class=" mb-2">Recent Work</h2>
+            <p>Here are a few projects I've worked on.</p>
           </div>
-          <!-- row start -->
-          <div class="row row-cols-1 row-cols-md-2 g-4 py-4">
-            <div class="col my-3">
-              <div class="card text-end">
-                <a
-                  href="https://imaginative-macaron-e3f382.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="dist/images/Project-images/rock-paper-scissor.png"
-                    class="card-img-top"
-                    alt="Project image"
-                  />
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Rock Paper Scissors Lizard Spock Game
-                  </h5>
-                  <p class="card-text">
-                    Mobile first Rock Paper Scissors Lizard adn Spock game
-                    solution as part of a Frontend Mentor challenge.
-                  </p>
-                  <a
-                    class="btn btn-outline-primary px-4 button"
-                    href="https://github.com/ericpatricio/rock-paper-scissors-lizard-spock_game"
-                    role="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github</a
-                  >
-                  <a
-                    class="btn btn-outline-primary px-4 button"
-                    href="https://imaginative-macaron-e3f382.netlify.app/"
-                    role="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col my-3">
-              <div class="card text-end">
-                <a
-                  href="https://helpful-profiterole-a063b9.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="dist/images/Project-images/sunnyside-01.png"
-                    class="card-img-top"
-                    alt="Project image"
-                  />
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">Sunnyside Agency Landing Page</h5>
-                  <p class="card-text">
-                    Responsive landing page created for a digital Agency
-                    solution as part of a Frontend Mentor challenge.
-                  </p>
-                  <a
-                    class="btn btn-outline-primary px-4 button"
-                    href="https://github.com/ericpatricio/sunnyside-landing-page"
-                    role="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github</a
-                  >
-                  <a
-                    class="btn btn-outline-primary px-4 button"
-                    href="https://helpful-profiterole-a063b9.netlify.app/"
-                    role="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col my-3">
-              <div class="card text-end">
-                <a
-                  href="https://fastidious-bonbon-afb2ec.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="dist/images/Project-images/easybank.png"
-                    class="card-img-top"
-                    alt="Project image"
-                  />
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">Easybank Landing Page</h5>
-                  <p class="card-text">
-                    Responsive landing page created for a digital banking
-                    solution as part of a Frontend Mentor challenge.
-                  </p>
-                  <a
-                    class="btn btn-outline-primary px-4 button"
-                    href="https://github.com/ericpatricio/easybank-landing-page"
-                    role="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github</a
-                  >
-                  <a
-                    class="btn btn-outline-primary px-4 button"
-                    href="https://fastidious-bonbon-afb2ec.netlify.app/"
-                    role="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Demo</a
-                  >
-                </div>
-              </div>
-            </div>
 
-            <div class="col my-3">
-              <div class="card text-end">
-                <a
-                  href="https://ericpatricio.github.io/meal-recipes-finder/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="dist/images/Project-images/titas-recipes.png"
-                    class="card-img-top"
-                    alt="Project image"
-                  />
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">Tita's Meal Finder</h5>
-                  <p class="card-text pb-2">
-                    A recipe meal finder webpage, using themealdb.com API. This
-                    is a display UI with the capability to search for different
-                    recipes using certain keywords.
-                  </p>
-                  <a
-                    class="btn btn-outline-primary px-4 button"
-                    href="https://github.com/ericpatricio/meal-recipes-finder"
-                    role="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Github</a
-                  >
-                  <a
-                    class="btn btn-outline-primary px-4 button"
-                    href="https://ericpatricio.github.io/meal-recipes-finder/"
-                    role="button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Demo</a
-                  >
+          <div class="container">
+            
+            <!-- row start -->
+              <div class="row row-cols-2">   
+                <div class="col-12 px-0">
+                  <!-- card begin -->
+                  <div class="card mt-2 animation">
+                    <div class="row g-0">
+                      <div class="col-md-6">
+                        <a
+                              href="https://imaginative-macaron-e3f382.netlify.app/"
+                              role="button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><img
+                          src="/dist/images/Project-images/rock-paper-scissor.png"
+                          alt="rock-paper-scissor"
+                          class="img-fluid rounded-start "
+                        /></a>
+                      
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">                          
+                          <h4 class="card-title mb-2">
+                            <a
+                              href="https://imaginative-macaron-e3f382.netlify.app/"
+                              role="button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="text-secondary"
+                              >Rock Paper Scissors Game </a>                                            
+                          </h4>
+                          <p class="card-text mb-4">
+                            <small class="text-primary">HTML CSS JavaScript Mobile-First</small>
+                          </p>
+                          <p class="card-text mb-4">
+                            Mobile first workflow Rock Paper Scissors Lizard and Spock game, solution as part of a Frontend Mentor challenge.
+                          </p>
+                          <a
+                            class="btn btn-outline-primary m-1"
+                            href="https://imaginative-macaron-e3f382.netlify.app/"
+                            role="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                        
+                          
+                          <a
+                            class="btn btn-outline-primary m-1"
+                            href="https://github.com/ericpatricio/rock-paper-scissors-lizard-spock_game"
+                            role="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="fab fa-github"></i
+                          ></a>                          
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card end -->
+                  <!-- card 2 begin -->
+                  <div class="card animation">
+                    <div class="row flex-row-reverse g-0">
+                      <div class="col-md-6">
+                        <a
+                              href="https://helpful-profiterole-a063b9.netlify.app/"
+                              role="button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><img
+                          src="/dist/images/Project-images/sunnyside-01.png"
+                          alt="rock-paper-scissor"
+                          class="img-fluid rounded-start "
+                        /></a>
+                      
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">                          
+                          <h4 class="card-title mb-2">
+                            <a
+                              href="https://helpful-profiterole-a063b9.netlify.app/"
+                              role="button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="text-secondary"
+                              >Sunnyside Agency Landing Page </a>                                            
+                          </h4>
+                          <p class="card-text mb-4">
+                            <small class="text-primary">HTML CSS JavaScript</small>
+                          </p>
+                          <p class="card-text mb-4">
+                            Responsive landing page created for a digital Agency solution as part of a Frontend Mentor challenge.
+                          </p>
+                          <a
+                            class="btn btn-outline-primary m-1"
+                            href="https://helpful-profiterole-a063b9.netlify.app/"
+                            role="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                        
+                          
+                          <a
+                            class="btn btn-outline-primary m-1"
+                            href="https://github.com/ericpatricio/sunnyside-landing-page"
+                            role="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="fab fa-github"></i
+                          ></a>                          
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card 2 end -->
+                  <!-- card 3 begin -->
+                  <div class="card mt-2 animation">
+                    <div class="row g-0 text-end">
+                      <div class="col-md-6">
+                        <a
+                              href="https://fastidious-bonbon-afb2ec.netlify.app/"
+                              role="button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><img
+                          src="/dist/images/Project-images/easybank.png"
+                          alt="rock-paper-scissor"
+                          class="img-fluid rounded-start "
+                        /></a>
+                      
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">                          
+                          <h4 class="card-title mb-2">
+                            <a
+                              href="https://fastidious-bonbon-afb2ec.netlify.app/"
+                              role="button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="text-secondary"
+                              >Easybank Landing Page </a>                                            
+                          </h4>
+                          <p class="card-text mb-4">
+                            <small class="text-primary">HTML CSS JavaScript</small>
+                          </p>
+                          <p class="card-text mb-4">
+                            Responsive landing page created for a digital banking solution as part of a Frontend Mentor challenge.
+                          </p>
+                          <a
+                            class="btn btn-outline-primary m-1"
+                            href="https://fastidious-bonbon-afb2ec.netlify.app/"
+                            role="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                        
+                          
+                          <a
+                            class="btn btn-outline-primary m-1"
+                            href="https://github.com/ericpatricio/easybank-landing-page"
+                            role="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="fab fa-github"></i
+                          ></a>                          
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card 3 end -->
+                  <!-- card 4 begin -->
+                  <div class="card animation">
+                    <div class="row flex-row-reverse g-0">
+                      <div class="col-md-6">
+                        <a
+                              href="https://ericpatricio.github.io/meal-recipes-finder/"
+                              role="button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><img
+                          src="/dist/images/Project-images/titas-recipes.png"
+                          alt="rock-paper-scissor"
+                          class="img-fluid rounded-start "
+                        /></a>
+                      
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">                          
+                          <h4 class="card-title mb-2">
+                            <a
+                              href="https://ericpatricio.github.io/meal-recipes-finder/"
+                              role="button"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="text-secondary"
+                              >Tita's Meal Recipe Page </a>                                            
+                          </h4>
+                          <p class="card-text mb-4">
+                            <small class="text-primary">HTML CSS JavaScript API</small>
+                          </p>
+                          <p class="card-text mb-4">
+                            A recipe meal finder webpage, using themealdb.com API. This is a display UI with the capability to search for different recipes using certain keywords.
+                          </p>
+                          <a
+                            class="btn btn-outline-primary m-1"
+                            href="https://ericpatricio.github.io/meal-recipes-finder/"
+                            role="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                        
+                          
+                          <a
+                            class="btn btn-outline-primary m-1"
+                            href="https://github.com/ericpatricio/meal-recipes-finder"
+                            role="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="fab fa-github"></i
+                          ></a>                          
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card 4 end -->
                 </div>
-              </div>
             </div>
+            
           </div>
-          <!-- row end -->
+          
         </div>
         <!-- ///////////////////////////////////////// -->
       </section>
       <!-- End portfolio section//////////////////////////////////// -->
       <!-- Contact section//////////////////////////////////////////// -->
-      <section id="contact" class="contact">
-        <div class="container mt-3">
-          <div class="title-section">
-            <h2 class="text-start pb-2 mb-2">Contact Me</h2>
+      <section id="contact" class="contact mt-4">
+        <div class="container">
+          <div class="title-section text-start animation">
+            <h2 class="mb-2">Contact Me</h2>    
+            <p>I'm currently looking for opportunities.Whenther is a Freelance work, Part-Time or Full-Time job, please text me, email me. I'll will get back to you as soon as posible.</p>        
           </div>
-          <div class="row mt-4">
+          
+          <div class="row px-0 py-4 contact-content animation">            
             <!-- Direct contact -->
-            <div class="col-lg-6 direct-contact">
-              <ul class="list-group">
+            <div class="col-lg-6 contact-content-info px-0 ">
+              <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <i class="fa fa-map-marker fa-2x"></i>
-                  <span class="contact-info">Kissimmee, Florida</span>
+                  <p class="fw-bold mb-0">Email:</p>                  
+                  <a
+                      href="mailto:ericwpatricio@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      
+                      >ericwpatricio@gmail.com</a>
                 </li>
                 <li class="list-group-item">
-                  <i class="fa fa-phone fa-2x"></i>
-                  <span class="contact-info">
+                  <p class="fw-bold mb-0">Mobile:</p>
+                 
                     <a
                       href="tel:786-352-0061"
                       target="_blank"
                       rel="noopener noreferrer"
+                      
                       >(786) 352-0061</a
-                    ></span
-                  >
+                    >
                 </li>
+                
                 <li class="list-group-item">
-                  <i class="fa fa-envelope fa-2x"></i>
-                  <span class="contact-info"
-                    ><a
-                      href="mailto:ericwpatricio@gmail.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >ericwpatricio@gmail.com</a
-                    ></span
-                  >
+                  <p class="fw-bold mb-0">Adress:</p>
+                  <span class="text-secondary">Kissimmee, Florida</span>
                 </li>
               </ul>
             </div>
-            <div class="col-lg-6">
-              <!-- Contact form -->
-              <form
-                id="contact-form"
-                action="https://formspree.io/f/xaykwnjz"
-                method="POST"
-              >
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control form-control-lg"
-                  placeholder="NAME"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  class="form-control mt-3"
-                  placeholder="EMAIL"
-                  required
-                />
-                <div class="mb-3 mt-3">
-                  <textarea
-                    class="form-control"
-                    rows="5"
-                    id="comment"
-                    name="message"
-                    placeholder="MESSAGE"
-                    required
-                  ></textarea>
-                </div>
-                <div class="d-grid gap-2">
-                  <button
-                    type="submit"
-                    class="btn btn-outline-primary mt-3 button"
-                  >
-                    Send <i class="fa-solid fa-paper-plane"></i>
-                  </button>
-                </div>
-              </form>
+            <!-- Contact icons -->
+            <div class="col-lg-6 contact-content-icons">
+              <img src="/dist/images/contact-me-img.png" alt="contact me image">              
             </div>
           </div>
         </div>
       </section>
       <!-- End contact section///////////////////////////////////////////// -->
       <!-- footer section///////////////////////////////////////////////////-->
-      <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <div class="mb-4">
-            <!-- Linkedin -->
-            <a
-              class="btn btn-outline-primary text-white m-1"
-              href="https://www.linkedin.com/in/ericpatricio/"
-              role="button"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <!-- Github -->
-            <a
-              class="btn btn-outline-primary text-white m-1"
-              href="https://github.com/ericpatricio"
-              role="button"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-github"></i
-            ></a>
-          </div>
-          <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
+      <footer class="text-center text-white">
+      
         <!-- Copyright -->
         <div class="copyright text-center py-2 bg-secondary">
-          <p>
-            &copy; Copyright: <span id="current-year"></span>
-            Eric Patricio
+          <p class="mb-0">
+            Build by Eric Patricio 
+            <span id="current-year"></span>
           </p>
         </div>
         <!-- Copyright -->

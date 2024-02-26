@@ -1,5 +1,5 @@
 // theme scss-docs-start color-variables
-$blue: #0d6efd;
+$blue: #374574;
 $indigo: #6610f2;
 $purple: #6f42c1;
 $pink: #d63384;
@@ -13,10 +13,9 @@ $cyan: #00adb5;
 // scss-docs-end color-variables
 
 // scss-docs-start gray-color-variables
-$white: #ffffff;
-// $gray-100: #f8f9fa;
+$white: #fefffd;
+$gray-100: #f8f9fa;
 $gray-100: #eeeeee;
-
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #ced4da;
@@ -30,24 +29,12 @@ $black: #000;
 // scss-docs-end gray-color-variables
 
 // scss-docs-start theme-color-variables
-$primary: $cyan;
-$secondary: $gray-700;
-$success: $green;
-$warning: $yellow;
-$danger: $red;
-$light: $gray-100;
-$dark: $gray-900;
+$primary: $blue;
+$secondary: $gray-900;
+
 // scss-docs-end theme-color-variables
-
-// Navbar
-$navbar-brand-font-size: 2rem;
-
-// Hamburger
-$navbar-toggler-border-radius: 2px;
-$navbar-toggler-focus-width: none;
-
 $container-max-widths: (
-  xl: 1040px,
+  xl: 1240px,
 );
 
 // Import bootstrap

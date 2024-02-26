@@ -2,65 +2,37 @@
 @use "../base/mixin" as *;
 // Contact form
 .contact {
-  position: relative;
   background: transparent;
-  color: $dark;
-  padding: 0 1rem 1rem 1rem;
+  color: $secondary;
+  height: 100%;
+  width: 100%;
 
-  .form-control,
-  textarea {
-    background-color: #000;
-    color: $white;
-    letter-spacing: 1px;
-    border: 1px solid rgba($color: $white, $alpha: 0.2);
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &:focus {
-      background-color: $white;
-      color: #000;
-    }
-  }
-}
-
-// ////////////////
-// Direct contact info
-.direct-contact {
-  @include tablet-big-down {
-    margin-bottom: 4rem;
-  }
-  .list-group {
-    list-style-type: none;
-
-    .text-secondary {
-      color: $white;
-    }
-    &-item {
-      color: $dark;
-      background-color: transparent;
-      border: none;
-      @include tablet-big-down {
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // text-align: center;
-      }
-      span.contact-info {
-        @include tablet-big-down {
-          font-size: 1rem;
-          margin-left: 0;
-        }
+    &-icons {
+      text-align: center;
+      i {
+        margin: 1rem;
+        color: $primary;
       }
 
-      .contact-info {
-        font-size: 1.2rem;
-        letter-spacing: 1.8px;
-        margin-left: 1rem;
+      @include tablet-down {
+        margin-top: 4rem;
+      }
+    }
 
-        a {
-          color: $dark;
-
-          @include tablet-big-down {
-            font-size: 0.9rem;
+    &-info {
+      ul {
+        li {
+          background: none;
+          a {
+            &:hover {
+              color: $primary;
+              font-weight: bold;
+            }
           }
         }
       }
